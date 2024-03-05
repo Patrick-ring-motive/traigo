@@ -1,5 +1,5 @@
 // +build !go1.18
-package traigo
+/*package traigo
 
 import(
   . "github.com/Patrick-ring-motive/deferrable"
@@ -24,3 +24,4 @@ func Catch(catch func(interface{})) func(interface{}) {
 func Finally(finally func()) func() {
   return finally
 }
+*/
