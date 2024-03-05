@@ -1,0 +1,26 @@
+package traigo
+
+import(
+  . "github.com/Patrick-ring-motive/deferrable"
+)
+
+func Try(try func(), catch func(interface{}), finally ...func()) {
+
+  LinearDefer(try, Defer(func() {
+    if e := recover(); e != nil {
+      catch(e)
+    }
+    },func() {
+    if len(finally) > 0 {
+      finally[0]()
+    }
+  }))
+}
+
+func Catch(catch func(interface{})) func(interface{}) {
+  return catch
+}
+
+func Finally(finally func()) func() {
+  return finally
+}
