@@ -2,7 +2,7 @@
 # Traigo
 
 ## Overview
-The `traigo` module introduces a structured error handling pattern akin to `try/catch/finally` commonly found in other programming languages, adapted to Go's idioms. It utilizes Go's `panic` and `recover` for error handling, providing a familiar syntax for developers coming from languages with exception handling.
+The `traigo` module introduces a structured error handling pattern akin to `try/catch/finally` commonly found in other programming languages, adapted to Go. It utilizes Go's `panic` and `recover` for error handling, providing a familiar syntax for developers coming from languages with exception handling.
 
 ## Installation
 Ensure your project is set up with Go Modules and run:
